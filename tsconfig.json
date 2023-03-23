@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2022",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "paths": {
+      "@shared": ["src/shared"],
+      "@shared/*": ["src/shared/*"],
+      "@application": ["src/application"],
+      "@application/*": ["src/application/*"],
+      "@domain": ["src/domain"],
+      "@domain/*": ["src/domain/*"],
+      "@infra-adapters": ["src/infra-adapters"],
+      "@infra-adapters/*": ["src/infra-adapters/*"],
+      "@ui-adapters": ["src/ui-adapters"],
+      "@ui-adapters/*": ["src/ui-adapters/*"]
+    }
+  }
+}
